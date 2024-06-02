@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tail.css">
+    <link rel="stylesheet" href="index.css">
+    <script src="icons.js" defer type="module"></script>
+    <link rel="icon" href="public/logo-fire.png">
+    <title>Rekindled</title>
+</head>
+<body class="w-full flex flex-col items-center bg-[#010D0F]">
+    <header class="w-full flex justify-center absolute top-0 z-[2]">
+        <nav class="w-[73.96vw] flex justify-between font-bold text-[20px] pt-[46px] text-white">
+            <img src="public/logo-word-white-blueflame.png" width="95" height="29" class="cursor-pointer">
+            <div class="flex justify-between gap-[55px]">
+                <a href="#services" class="cursor-pointer border-b-2 border-white/0 hover:border-b-2 hover:border-white transition-all ease-in">services</a>
+                <a href="#portfolio" class="cursor-pointer border-b-2 border-white/0 hover:border-b-2 hover:border-white transition-all ease-in">portfolio</a>
+                <a href="#about-us" class="cursor-pointer border-b-2 border-white/0 hover:border-b-2 hover:border-white transition-all ease-in">about us</a>
+                <a href="#contact" class="cursor-pointer border-b-2 border-white/0 hover:border-b-2 hover:border-white transition-all ease-in">contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <section id="hero" class="w-full h-[100vh] flex flex-col items-center">
+        <!-- <video></video> video in the background -->
+        <!-- blur behind text -->
+
+        <video class="absolute left-0 w-full z-[0] bg-black max-[780px]:hidden" preload="none" autoplay muted loop poster="public/banner_video 1.png">
+            <source type="video/mp4" src="public/ssstwitter.com_1717343994053.mp4"/>
+        </video>
+        <div class="w-full h-full bg-[#010d0f4c] absolute z-[0]"></div>
+        <div class="w-[50%] h-full hero-blur absolute left-0 z-[0]"></div>
+        
+        <div class="w-[73.96vw] h-full flex flex-col items-start justify-center gap-[10px] z-[1]">
+            <img src="public/logo-word-white-blueflame.png" width="297" height="91"> <!-- logo here -->
+            <span class="font-bold text-[48px] max-w-[554px] leading-[55px] text-white mt-[25px]">  <!-- pitch -->
+                Your Trusted Partners in <span class="text-[#58B09C]">Character Art</span> and <span class="text-[#58B09C]">Animation Integration</span>.
+            </span>
+            <span class="font-light text-[24px] max-w-[448px] text-white mt-[10px]">  <!-- short copy -->
+                Over a Decade of Industry Expertise Working With AAA and Indie Games
+            </span>
+            <a class="font-medium text-[40px] text-white cursor-pointer py-[20px] px-[50px] border-[2px] mt-[31px] hover:bg-white hover:text-black transition-all ease-in-out">
+                Get In Touch
+            </a> <!-- call to action -->
+        </div>
+
+        <a href="#services" class="cursor-pointer p-2 z-[1]">
+            <i data-lucide="chevron-down" color="white" size="48"></i>
+        </a>
+
+    </section>
+
+    <section id="services" class="w-full z-[2]">
+        <div id="tech-animation" class="h-[100vh] bg-[#011518] w-full pt-[100px] flex flex-col items-center gap-[50px]">
+            <div id="main-wrapper-tech-animation" class="w-[73.96vw] flex justify-around">
+                <div id="content-wrapper-tech-animation">
+                    <div class="div-service-title flex flex-col gap-[2px] ">
+                        <!-- add 'we do' before -->
+                        <span class="font-light text-[20px] text-white">We Do</span>
+                        <h1 class="text-white font-bold text-[64px] max-w-[441px] leading-[70px]">Tech Animation</h1>
+                        <span class="bg-[#58B09C] h-[1px] w-[343px] mt-[40px]"></span>
+                    </div>
+                    <div>
+                        <ul class="text-white font-semibold text-[20px] flex flex-col gap-[20px] mt-[39px]"> <!-- service list -->
+                            <li>
+                                <div class="flex gap-[19px] items-center">
+                                    <i data-lucide="arrow-right" color="#58B09C" stroke-width="3" size="24"></i>
+                                    <span>Maya Character rigging</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="flex gap-[19px] items-center">
+                                    <i data-lucide="arrow-right" color="#58B09C" stroke-width="3"></i>
+                                    <span>Pipeline setup</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="flex gap-[19px] items-center">
+                                    <i data-lucide="arrow-right" color="#58B09C" stroke-width="3"></i>
+                                    <span>Maya tooling (python)</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="flex gap-[19px] items-center">
+                                    <i data-lucide="arrow-right" color="#58B09C" stroke-width="3"></i>
+                                    <span>Unreal or CryEngine character setup</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="flex gap-[19px] items-center">
+                                    <i data-lucide="arrow-right" color="#58B09C" stroke-width="3"></i>
+                                    <span>Unreal or CryEngine character dynamics</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="flex gap-[19px] items-center">
+                                    <i data-lucide="arrow-right" color="#58B09C" stroke-width="3"></i>
+                                    <span>MetaHuman building and customization</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="flex gap-[19px] items-center">
+                                    <i data-lucide="arrow-right" color="#58B09C" stroke-width="3"></i>
+                                    <span>HIK retargetting setup</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="flex gap-[19px] items-center">
+                                    <i data-lucide="arrow-right" color="#58B09C" stroke-width="3"></i>
+                                    <span>Consulting</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-5">
+                    <!-- 2 images/gifs here -->
+                    <div class="w-[526px] h-[380px] bg-slate-500"></div>
+                    <div class="w-[526px] h-[380px] bg-slate-500"></div>
+                </div>
+            </div>
+            <a href="#animation" class="cursor-pointer p-2">
+                <i data-lucide="chevron-down" color="white" size="48"></i>
+            </a>
+        </div>
+        <div id="animation" class="h-[100vh] bg-[#ffffff] w-full pt-[100px] flex flex-col items-center gap-[50px]">
+            <div id="main-wrapper animation" class="w-[73.96vw] flex justify-around">
+                <div id="content-wrapper animation" class="order-1">
+                    <div class="div-service-title flex flex-col gap-[2px] ">
+                        <!-- add 'we do' before -->
+                        <span class="font-light text-[20px] text-black">We Do</span>
+                        <h1 class="text-black font-bold text-[64px] max-w-[441px] leading-[70px]">Animation</h1>
+                        <span class="bg-[#58B09C] h-[1px] w-[343px] mt-[40px]"></span>
+                    </div>
+                    <div>
+                        <ul class="text-black font-semibold text-[20px] flex flex-col gap-[20px] mt-[39px]"> <!-- service list -->
+                            <li>
+                                <div class="flex gap-[19px] items-center">
+                                    <i data-lucide="arrow-right" color="#58B09C" stroke-width="3" size="24"></i>
+                                    <span>Handkey</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="flex gap-[19px] items-center">
+                                    <i data-lucide="arrow-right" color="#58B09C" stroke-width="3"></i>
+                                    <span>Third and first person</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="flex gap-[19px] items-center">
+                                    <i data-lucide="arrow-right" color="#58B09C" stroke-width="3"></i>
+                                    <span>Motion capture for facial and body  performance</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="flex gap-[19px] items-center">
+                                    <i data-lucide="arrow-right" color="#58B09C" stroke-width="3"></i>
+                                    <span>Motion capture cleanup</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="flex gap-[19px] items-center">
+                                    <i data-lucide="arrow-right" color="#58B09C" stroke-width="3"></i>
+                                    <span>MetaHuman animation</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-5">
+                    <!-- 2 images/gifs here -->
+                    <div class="w-[526px] h-[380px] bg-slate-500"></div>
+                    <div class="w-[526px] h-[380px] bg-slate-500"></div>
+                </div>
+            </div>
+            <a href="#character-art" class="cursor-pointer p-2">
+                <i data-lucide="chevron-down" color="black" size="48"></i>
+            </a>
+        </div>
+        <div id="character-art" class="h-[100vh] bg-[#011518] w-full pt-[100px] flex justify-center">
+            <div id="main-wrapper-character-art" class="w-[73.96vw] flex justify-around">
+                <div id="content-wrapper-character-art">
+                    <div class="div-service-title flex flex-col gap-[2px] ">
+                        <!-- add 'we do' before -->
+                        <span class="font-light text-[20px] text-white">We Do</span>
+                        <h1 class="text-white font-bold text-[64px] max-w-[441px] leading-[70px]">Character Art</h1>
+                        <span class="bg-[#58B09C] h-[1px] w-[343px] mt-[40px]"></span>
+                    </div>
+                    <div>
+                        <ul class="text-white font-semibold text-[20px] flex flex-col gap-[20px] mt-[39px]"> <!-- service list -->
+                            <!--
+                                Oraganic and/or hardsurface modelling
+                                Character blockout for clothing, props and bodies
+                                Highpoly for clothing, props and bodies
+                                Clean and efficient retopology and UVW's of 3D assets
+                                Texturing and engine shader setup, predominantly in Unreal
+                                Scan mesh clean-up
+                                Full understanding of cosmetic/customisation systems
+                                Consulting, producing briefs and asset review
+-->
+                            <li>
+                                <div class="flex gap-[19px] items-center">
+                                    <i data-lucide="arrow-right" color="#58B09C" stroke-width="3" size="24"></i>
+                                    <span>Oraganic and/or hardsurface modelling</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="flex gap-[19px] items-center">
+                                    <i data-lucide="arrow-right" color="#58B09C" stroke-width="3"></i>
+                                    <span>Character blockout for clothing, props and bodies</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="flex gap-[19px] items-center">
+                                    <i data-lucide="arrow-right" color="#58B09C" stroke-width="3"></i>
+                                    <span>Highpoly for clothing, props and bodies</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="flex gap-[19px] items-center">
+                                    <i data-lucide="arrow-right" color="#58B09C" stroke-width="3"></i>
+                                    <span>Clean and efficient retopology and UVW's of 3D assets</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="flex gap-[19px] items-center">
+                                    <i data-lucide="arrow-right" color="#58B09C" stroke-width="3"></i>
+                                    <span>Texturing and engine shader setup, predominantly in Unreal</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="flex gap-[19px] items-center">
+                                    <i data-lucide="arrow-right" color="#58B09C" stroke-width="3"></i>
+                                    <span>Scan mesh clean-up</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="flex gap-[19px] items-center">
+                                    <i data-lucide="arrow-right" color="#58B09C" stroke-width="3"></i>
+                                    <span>Full understanding of cosmetic/customisation systems</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="flex gap-[19px] items-center">
+                                    <i data-lucide="arrow-right" color="#58B09C" stroke-width="3"></i>
+                                    <span>Consulting, producing briefs and asset review</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-5">
+                    <!-- 2 images/gifs here -->
+                    <div class="w-[526px] h-[380px] bg-slate-500"></div>
+                    <div class="w-[526px] h-[380px] bg-slate-500"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="bg-white w-full h-[100vh] flex flex-col items-center">
+        <header class="w-[1066px]">
+            <!-- add 'latest' before -->
+            <h1>Clients</h1>
+            <a>See All -></a>
+        </header>
+        <div class="flex flex-wrap w-[1066px]"> <!-- porjects images here -->
+            <img src="?" width="533" height="303.51">
+            <img src="?" width="533" height="303.51">
+            <img src="?" width="355.33" height="355.33">
+            <img src="?" width="355.33" height="355.33">
+            <img src="?" width="355.33" height="355.33">
+        </div> 
+        </video>
+    </section>
+
+    <section id="about-us">
+        <header>
+            <h1>About Us</h1>
+        </header>
+        <main>
+            <p>Rekindled is an independently run Studio that specializes in full character and animation pipelines.</p>
+            <p>The  studio is made up of industry experts in the fields of Character Art,  Animation and Technical Animation for games and other entertainment  media.</p>
+            <p>Utilizing  over 10 years experience in AAA and Indie, our departments can provide  high quality character modelling, fully optimised meshes with correct  UV's, Texturing and shader work, Rigging, Skinning and Scripting, First  and Third Person Handkeyed Animation, and Motion Capture performance and  clean up.</p>
+            <p>We  pride ourselves on the ability to integrate seamlessly as  Co-Development partners, adapting to project, team and engine  requirements</p>
+        </main>
+        <div id="meet-our-team">
+            <div class="member-card">
+                <div>member image</div> <!-- member image -->
+                <span>member name</span>
+                <span>member message</span>
+            </div> 
+            <div class="member-card">
+                <div>member image</div> <!-- member image -->
+                <span>member name</span>
+                <span>member message</span>
+            </div> 
+            <div class="member-card">
+                <div>member image</div> <!-- member image -->
+                <span>member name</span>
+                <span>member message</span>
+            </div> 
+            <div class="member-card">
+                <div>member image</div> <!-- member image -->
+                <span>member name</span>
+                <span>member message</span>
+            </div> 
+            <div class="member-card">
+                <div>member image</div> <!-- member image -->
+                <span>member name</span>
+                <span>member message</span>
+            </div> 
+            <div class="member-card">
+                <div>member image</div> <!-- member image -->
+                <span>member name</span>
+                <span>member message</span>
+            </div> 
+            <div class="member-card">
+                <div>member image</div> <!-- member image -->
+                <span>member name</span>
+                <span>member message</span>
+            </div> 
+        </div>
+    </section>
+
+    <section id="contact">
+        <form>
+            <input type="text" placeholder="your name">
+            <input type="email" placeholder="your_email@email.com">
+            <input type="text" placeholder="your message">
+            <input type="submit" value="send">
+        </form>
+    </section>
+
+    <footer>
+        <div> <!-- logo + pitch -->
+            <img>
+            <span></span>
+        </div> 
+        <nav>
+            <div class="footer-div-services">
+                <h1><a>services</a></h1>
+                <a>Tech Animation</a>
+                <a>Animation</a>
+                <a>Character Art</a>
+            </div>
+            <div class="footer-div-portfolio">
+                <h1><a>portfolio</a></h1>
+                <a>Latest Clients</a>
+                <a>See All</a>
+            </div>
+            <div class="footer-div-about-us">
+                <h1><a>about us</a></h1>
+                <a>About Us</a>
+                <a>Meet Our Team</a>
+            </div>
+            <div class="footer-div-contact">
+                <h1><a>contact</a></h1>
+                <a>Send Us a Message</a>
+                <div class="footer-div-socials">
+                    <a>X</a>
+                    <a>Linkedin</a>
+                </div>
+            </div>
+        </nav>
+        <div> <!-- developed by-->
+            <span>developed with love by <a href="?" target="_blank">Hierro Fernandes</a></span>
+        </div> 
+    </footer>
+</body>
+</html>
