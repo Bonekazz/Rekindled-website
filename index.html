@@ -26,7 +26,7 @@
         <!-- <video></video> video in the background -->
         <!-- blur behind text -->
 
-        <video class="absolute left-0 w-full z-[0] bg-black max-[780px]:hidden" preload="none" autoplay muted loop poster="public/banner_video 1.png">
+        <video class="absolute left-0 w-full z-[0] bg-black max-[780px]:hidden" preload="none" autoplay muted loop>
             <source type="video/mp4" src="public/ssstwitter.com_1717343994053.mp4"/>
         </video>
         <div class="w-full h-full bg-[#010d0f4c] absolute z-[0]"></div>
@@ -116,8 +116,16 @@
                 </div>
                 <div class="flex flex-col gap-5">
                     <!-- 2 images/gifs here -->
-                    <div class="w-[526px] h-[380px] bg-slate-500"></div>
-                    <div class="w-[526px] h-[380px] bg-slate-500"></div>
+                    <div class="w-[526px] h-[380px] bg-slate-500 overflow-hidden shadow-lg shadow-black/40">
+                        <video preload="none" autoplay muted loop class="w-full h-full scale-[1.7]">
+                            <source type="video/mp4" src="public/service-videos/gun-animation.mp4">
+                        </video>
+                    </div>
+                    <div class="w-[526px] h-[380px] bg-slate-500 overflow-hidden shadow-lg shadow-black/40">
+                        <video preload="none" autoplay muted loop class="w-full h-full scale-[1.35]">
+                            <source type="video/mp4" src="public/service-videos/unreal-animation.mp4">
+                        </video>
+                    </div>
                 </div>
             </div>
             <a href="#animation" class="cursor-pointer p-2">
@@ -170,8 +178,16 @@
                 </div>
                 <div class="flex flex-col gap-5">
                     <!-- 2 images/gifs here -->
-                    <div class="w-[526px] h-[380px] bg-slate-500"></div>
-                    <div class="w-[526px] h-[380px] bg-slate-500"></div>
+                    <div class="w-[526px] h-[380px] bg-slate-500 overflow-hidden shadow-lg shadow-black/40">
+                        <video preload="none" autoplay muted loop class="w-full h-full scale-[1.3]">
+                            <source type="video/mp4" src="public/service-videos/animation-1.mp4">
+                        </video>
+                    </div>
+                    <div class="w-[526px] h-[380px] bg-slate-500 overflow-hidden shadow-lg shadow-black/40">
+                        <video preload="none" autoplay muted loop class="w-full h-full scale-[1.35]">
+                            <source type="video/mp4" src="public/service-videos/face-capture.mp4">
+                        </video>
+                    </div>
                 </div>
             </div>
             <a href="#character-art" class="cursor-pointer p-2">
@@ -284,97 +300,119 @@
         </video>
     </section>
 
-    <section id="about-us" class="w-full h-[100vh]">
-        <header>
-            <h1>About Us</h1>
-        </header>
-        <main>
-            <p>Rekindled is an independently run Studio that specializes in full character and animation pipelines.</p>
-            <p>The  studio is made up of industry experts in the fields of Character Art,  Animation and Technical Animation for games and other entertainment  media.</p>
-            <p>Utilizing  over 10 years experience in AAA and Indie, our departments can provide  high quality character modelling, fully optimised meshes with correct  UV's, Texturing and shader work, Rigging, Skinning and Scripting, First  and Third Person Handkeyed Animation, and Motion Capture performance and  clean up.</p>
-            <p>We  pride ourselves on the ability to integrate seamlessly as  Co-Development partners, adapting to project, team and engine  requirements</p>
-        </main>
-        <div id="meet-our-team">
-            <div class="member-card">
-                <div>member image</div> <!-- member image -->
+    <section id="about-us" class="w-full flex flex-col items-center">
+        <div class="w-full h-[100vh] flex flex-col items-center">
+            <header class="flex flex-col items-center gap-[10px] mt-[108px]">
+                <h1 class="text-white text-[64px] font-bold">About Us</h1>
+                <span class="bg-[#58B09C] h-[1px] w-[343px]"></span>
+            </header>
+            <div class="text-gray-300 text-[20px] text-justify font-regular w-[1066px] flex flex-col gap-[35px] mt-[49px]">
+                <p>Rekindled is an independently run Studio that specializes in full character and animation pipelines.</p>
+                <p>The  studio is made up of industry experts in the fields of Character Art,  Animation and Technical Animation for games and other entertainment  media.</p>
+                <p>Utilizing  over 10 years experience in AAA and Indie, our departments can provide  high quality character modelling, fully optimised meshes with correct  UV's, Texturing and shader work, Rigging, Skinning and Scripting, First  and Third Person Handkeyed Animation, and Motion Capture performance and  clean up.</p>
+                <p>We  pride ourselves on the ability to integrate seamlessly as  Co-Development partners, adapting to project, team and engine  requirements</p>
+            </div>
+            <div id="team-pic"></div>
+        </div>
+        <div id="meet-our-team" class="flex flex-wrap gap-[20px] w-[1066px] mt-[8em]">
+            <div class="member-card flex flex-col gap-[5px]">
+                <div class="w-[218.52px] h-[216.8px] bg-gray-400">member image</div> <!-- member image -->
                 <span>member name</span>
                 <span>member message</span>
             </div> 
-            <div class="member-card">
-                <div>member image</div> <!-- member image -->
+            <div class="member-card flex flex-col gap-[5px]">
+                <div class="w-[218.52px] h-[216.8px] bg-gray-400">member image</div> <!-- member image -->
                 <span>member name</span>
                 <span>member message</span>
             </div> 
-            <div class="member-card">
-                <div>member image</div> <!-- member image -->
+            <div class="member-card flex flex-col gap-[5px]">
+                <div class="w-[218.52px] h-[216.8px] bg-gray-400">member image</div> <!-- member image -->
                 <span>member name</span>
                 <span>member message</span>
             </div> 
-            <div class="member-card">
-                <div>member image</div> <!-- member image -->
+            <div class="member-card flex flex-col gap-[5px]">
+                <div class="w-[218.52px] h-[216.8px] bg-gray-400">member image</div> <!-- member image -->
                 <span>member name</span>
                 <span>member message</span>
             </div> 
-            <div class="member-card">
-                <div>member image</div> <!-- member image -->
+            <div class="member-card flex flex-col gap-[5px]">
+                <div class="w-[218.52px] h-[216.8px] bg-gray-400">member image</div> <!-- member image -->
                 <span>member name</span>
                 <span>member message</span>
             </div> 
-            <div class="member-card">
-                <div>member image</div> <!-- member image -->
+            <div class="member-card flex flex-col gap-[5px]">
+                <div class="w-[218.52px] h-[216.8px] bg-gray-400">member image</div> <!-- member image -->
                 <span>member name</span>
                 <span>member message</span>
             </div> 
-            <div class="member-card">
-                <div>member image</div> <!-- member image -->
+            <div class="member-card flex flex-col gap-[5px]">
+                <div class="w-[218.52px] h-[216.8px] bg-gray-400">member image</div> <!-- member image -->
                 <span>member name</span>
                 <span>member message</span>
             </div> 
         </div>
     </section>
 
-    <section id="contact">
-        <form>
-            <input type="text" placeholder="your name">
-            <input type="email" placeholder="your_email@email.com">
-            <input type="text" placeholder="your message">
-            <input type="submit" value="send">
-        </form>
+    <section id="contact" class="w-full h-[100vh]">
+        <div class="w-full">
+            <form class="">
+                <input type="text" placeholder="your name">
+                <input type="email" placeholder="your_email@email.com">
+                <input type="text" placeholder="your message">
+                <input type="submit" value="send">
+            </form>
+        </div>
     </section>
 
-    <footer>
-        <div> <!-- logo + pitch -->
-            <img>
-            <span></span>
-        </div> 
-        <nav>
-            <div class="footer-div-services">
-                <h1><a>services</a></h1>
-                <a>Tech Animation</a>
-                <a>Animation</a>
-                <a>Character Art</a>
+    <footer class="bg-black w-full text-white py-[70px] px-[188px] flex flex-col gap-[68px]">
+        <div class="flex gap-[180px]">
+            <div class="flex flex-col gap-[27px]"> <!-- logo + pitch -->
+                <img src="public/logo-word-white-blueflame.png" width="121">
+                <span class="font-normal text-[20px] text-gray-400 w-[270px]">Your Trusted Partners in Character Art and Animation Integration.</span>
             </div>
-            <div class="footer-div-portfolio">
-                <h1><a>portfolio</a></h1>
-                <a>Latest Clients</a>
-                <a>See All</a>
-            </div>
-            <div class="footer-div-about-us">
-                <h1><a>about us</a></h1>
-                <a>About Us</a>
-                <a>Meet Our Team</a>
-            </div>
-            <div class="footer-div-contact">
-                <h1><a>contact</a></h1>
-                <a>Send Us a Message</a>
-                <div class="footer-div-socials">
-                    <a>X</a>
-                    <a>Linkedin</a>
+            <nav class="w-full flex justify-between gap-[2em]">
+                <div class="footer-div-services flex flex-col gap-[27px]">
+                    <a href="#services" class="font-bold text-[20px] border-b border-white/0 hover:border-white transition-all ease-in-out duration-700 cursor-pointer">services</a>
+                    <div class="flex flex-col gap-[14px] text-gray-400 font-normal">
+                        <a href="#tech-animation">Tech Animation</a>
+                        <a href="#animation">Animation</a>
+                        <a href="#character-art">Character Art</a>
+                    </div>
                 </div>
+                <div class="footer-div-portfolio flex flex-col gap-[27px]">
+                    <a class="font-bold text-[20px] border-b border-white/0 hover:border-white transition-all ease-in-out duration-700 cursor-pointer">portfolio</a>
+                    <div class="flex flex-col gap-[14px] text-gray-400 font-normal">
+                        <a href="#portfolio">Latest Clients</a>
+                        <a>See All</a>
+                    </div>
+                </div>
+                <div class="footer-div-about-us flex flex-col gap-[27px]">
+                    <a class="font-bold text-[20px] border-b border-white/0 hover:border-white transition-all ease-in-out duration-700 cursor-pointer">about us</a>
+                    <div class="flex flex-col gap-[14px] text-gray-400 font-normal">
+                        <a href="#about-us">About Us</a>
+                        <a>Meet Our Team</a>
+                    </div>
+                </div>
+                <div class="footer-div-contact flex flex-col gap-[27px]">
+                    <a class="font-bold text-[20px] border-b border-white/0 hover:border-white transition-all ease-in-out duration-700 cursor-pointer">contact</a>
+                    <div class="flex flex-col gap-[14px] text-gray-400 font-normal">
+                        <a>Send Us a Message</a>
+                        <div class="footer-div-socials flex gap-[13px]">
+                            <a href="https://x.com/RekindledStudio" target="_blank" class="cursor-pointer"><div id="x-icon" class="w-[17px] h-[17px]"></div></a>
+                            <a href="https://www.linkedin.com/company/rekindledstudios/posts/?feedView=all" target="_blank" class="cursor-pointer"><div id="linkedin-icon" class="w-[17px] h-[17px]"></div></a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="flex flex-col gap-[52px] items-end"> <!-- developed by-->
+            <div class="w-full h-[1px] bg-gray-400"></div>
+            <div class="flex gap-[5px] items-center">
+                <span class="text-gray-400">developed with</span>
+                <div id="heart-icon" class="w-[16px] h-[16px]"></div>
+                <span class="text-gray-400">by</span>
+                <a href="https://www.linkedin.com/in/hierro-fernandes-1b56311ab/" target="_blank" class="border-b border-white/0 hover:border-white transition-all duration-700 ease-in-out">Hierro Fernandes</a>
             </div>
-        </nav>
-        <div> <!-- developed by-->
-            <span>developed with love by <a href="?" target="_blank">Hierro Fernandes</a></span>
         </div> 
     </footer>
 </body>

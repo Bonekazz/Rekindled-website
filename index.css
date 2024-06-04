@@ -20,6 +20,27 @@ html{
     background: linear-gradient(to right,#010D0F,#010D0F,#010D0F, #010d0fce, #010d0f46, rgba(255, 255, 255, 0));
 }
 
+#tech-animation {
+    background-image: url("public/bg-mod.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#animation {
+    background-image: url("public/bg-mod-white.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#character-art {
+    background-image: url("public/bg-mod.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 #deceit-project {
     background-image: url("public/deceit-banner.png");
     background-position: center center;
@@ -48,5 +69,26 @@ html{
 #ascendant-project {
     background-image: url("public/ascendant-banner.jpg");
     background-position: center center;
+    background-size: cover;
+}
+
+#heart-icon {
+    background-image: url("public/heart.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#x-icon {
+    background-image: url("public/icons/x-logo-white.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#linkedin-icon {
+    background-image: url("public/icons/linkedin-app-white-icon.webp");
+    background-position: center center;
+    background-repeat: no-repeat;
     background-size: cover;
 }
