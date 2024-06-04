@@ -260,22 +260,31 @@
     </section>
 
     <section id="portfolio" class="bg-white w-full h-[100vh] flex flex-col items-center">
-        <header class="w-[1066px]">
+        <header class="w-[1066px] mt-[7em]">
             <!-- add 'latest' before -->
-            <h1>Clients</h1>
-            <a>See All -></a>
+            <div class="flex justify-between items-center">
+                <div class="flex flex-col">
+                    <span>Latest</span>
+                    <h1>Clients</h1>
+                </div>
+                <a>See All -></a>
+            </div>
         </header>
         <div class="flex flex-wrap w-[1066px]"> <!-- porjects images here -->
-            <img src="?" width="533" height="303.51">
-            <img src="?" width="533" height="303.51">
-            <img src="?" width="355.33" height="355.33">
-            <img src="?" width="355.33" height="355.33">
-            <img src="?" width="355.33" height="355.33">
+            <div id="deceit-div" class="w-[533px] h-[303.51px] overflow-hidden">
+                <div id="deceit-project" class="w-full h-full bg-black/70 cursor-pointer transition-all ease-in-out duration-700 hover:scale-[1.1]"></div>
+            </div>
+            <div id="kaidan-div" class="w-[533px] h-[303.51px] overflow-hidden">
+                <div id="kaidan-project" class="w-full h-full bg-black/50 cursor-pointer transition-all ease-in-out duration-700 hover:scale-[1.1]"></div>
+            </div>
+            <div id="marauders-project" class="w-[355.33px] h-[335.33px] bg-black/40 cursor-pointer" ></div>
+            <div id="nightling-project" class="w-[355.33px] h-[335.33px] bg-black/60 cursor-pointer" ></div>
+            <div id="ascendant-project" class="w-[355.33px] h-[335.33px] bg-black/70 cursor-pointer" ></div>
         </div> 
         </video>
     </section>
 
-    <section id="about-us">
+    <section id="about-us" class="w-full h-[100vh]">
         <header>
             <h1>About Us</h1>
         </header>

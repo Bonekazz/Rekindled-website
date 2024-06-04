@@ -19,3 +19,34 @@ html{
 .hero-blur {
     background: linear-gradient(to right,#010D0F,#010D0F,#010D0F, #010d0fce, #010d0f46, rgba(255, 255, 255, 0));
 }
+
+#deceit-project {
+    background-image: url("public/deceit-banner.png");
+    background-position: center center;
+    background-size: cover;
+}
+
+#kaidan-project {
+    background-image: url("public/kaidan-banner.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#marauders-project {
+    background-image: url("public/marauders-banner.jpg");
+    background-position: center center;
+    background-size: cover;
+}
+
+#nightling-project {
+    background-image: url("public/nightingale-banner.jpg");
+    background-position: center center;
+    background-size: cover;
+}
+
+#ascendant-project {
+    background-image: url("public/ascendant-banner.jpg");
+    background-position: center center;
+    background-size: cover;
+}
